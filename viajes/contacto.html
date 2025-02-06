@@ -25,6 +25,43 @@
         <img width="40%" src="imagenes/Contacto.png" alt="Contactanos">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31729.89241163568!2d-75.5990738048375!3d6.2325159608474285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f8d5ad3251%3A0xb2ae659a13a2f892!2sAgencia%20de%20Viajes%20de%20Pueblo%20en%20Pueblo!5e0!3m2!1ses!2sco!4v1738081132101!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px">
+        <form>
+            <label>escriba su nombre: </label>
+            <input type="text" placeholder="escriba su nombre"> <br>
+            <label>celular o telefono</label>
+            <input required name="telefono" type="tel"> <br>
+            <label>su edad:</label>
+            <input required name="edad"  type="number" min="18" max="50"> <br>
+            <label>escriba su correo: </label>
+            <input required name="correo" type="email"> <br>
+            <label> fecha de nacumiento</label>
+            <input type="date" min="1950-01-01" max="2006-12-31"><br>
+            <label>enviar una foto</label>
+            <input type="file" accept=".jpg .png .gif" max="3MB"><br>
+            <label>Genero</label>
+            <input type="radio" name="Genero" value="hombre">hombre
+            <input type="radio" name="Genero" value="mujer">mujer 
+              <input type="radio" name="Genero" value="otro">otro <br>
+              <label>Escoger tu plan</label>
+              <input type="checkbox" name="plan" value="pareja">plan pareja
+              <input type="checkbox" name="plan" value="familiar">plan familiar
+              <input type="checkbox" name="plan" value="amigos">plan amigos
+              <input type="checkbox" name="plan" valvue="otro">otro <br>
+              <label>seleciona opcion de Contacto:</label>
+              <select name="contacto">
+                <option value="paloma">paloma mensajera</option>
+                <option value="humo">señales de humo</option>
+                <option value="rappi">rappi</option>
+                <option value="otro">otro</option>
+              </select><br>
+              <label>mensaje:</label>
+              <textarea name="mensaje"></textarea><br>
+                <button type="submit">enviar datos</button>
+            <button type="reset"> borrar datos</button>
+
+        </form>
+    </div>
      
 </body>
 </html>
